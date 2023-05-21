@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Barlow:wght@400;600&family=Epilogue:wght@500;700&family=Fraunces:ital,wght@1,700;1,900&family=Inter:wght@300;500;700&family=Josefin+Sans:ital,wght@0,400;1,100;1,300;1,600&family=League+Spartan:wght@400;500;700&family=Manrope:wght@500;700&family=Montserrat:wght@700&family=Open+Sans:wght@400;600;700&family=Overpass:wght@300;400;700&family=Poppins:ital,wght@0,600;0,700;1,200;1,400&family=Raleway:wght@400;700&family=Roboto:wght@300&family=Rubik:ital,wght@0,400;0,500;0,700;1,300&family=Space+Mono:ital,wght@0,700;1,700&family=Ubuntu:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+
+  <p class="title">SPLI<br>TTER</p>
+  <div class="container">
+    <div class="col-1">
+      <h4>Bill</h4>
+      <nav class="display__1">
+     
+        <span class="dollar-icon">
+          <img src="images/icon-dollar.svg" alt="dollar-icon" srcset="">
+        </span>
+        <input class="dollar" type="text" name="bill" id="bill" value="0">
+      </nav>
+      <h4>Select Tip %</h4>
+      <div class="grid-co">
+        <div class="grid__items">5%</div>
+        <div class="grid__items">10%</div>
+        <div class="grid__items">15%</div>
+        <div class="grid__items">25%</div>
+        <div class="grid__items">50%</div>
+        <div class="grid__items-last">Custom</div>
+      </div>
+      <nav class="result">
+        <h4>Number of People</h4>
+        <p class="error"></p>
+      </nav>
+    
+      <nav class="display__2">
+        <span class="person-icon">
+          <img src="images/icon-person.svg" alt="person-icon" srcset="">
+        </span>
+        <input class="person" type="text" name="bill" id="number_people" value="0">
+      </nav>
+
+    </div>
+    <div class="col-2">
+      <div class="top-section">
+        <div class="display__tip-amount">
+          <nav class="display__details">
+            <h4>Tip Amount</h4>
+            <p>/ person</p>
+          </nav>
+          <nav class="display__tip-figure">
+            <h1>$<span class="Tip">0.00</span></h1>
+          </nav>
+        </div>
+        <div class="display__total-amount">
+          <nav class="display__details-person">
+            <h4>Total</h4>
+            <p>/ person</p>
+          </nav>
+          <nav class="display__total-figure">
+            <h1>$<span class="Total">0.00</span></h1>
+          </nav>
+        </div>
+      </div>
+      <div class="lower-section">
+        <button class ="ctn">RESET</button>
+      </div>
+    </div>
+
+  </div>
+ 
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Hanzo</a>.
+  </div>
+  <script type="module" src="app.js"></script>
+</body>
+
+</html>
